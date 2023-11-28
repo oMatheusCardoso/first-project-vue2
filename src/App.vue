@@ -1,24 +1,25 @@
 <template>
   <div id="app">
-    <singUp/>
+    <SignUp/>
   </div>
 </template>
 
 <script>
-import singUp from './components/singUp.vue'
+import SignUp from './components/SignUp.vue'
 
 
 export default {
   name: 'App',
   components: {
-    singUp
+    SignUp,
+    
   },
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Nunito, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

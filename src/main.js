@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import Vuetify from 'vuetify/lib'
 import '@mdi/font/css/materialdesignicons.css'
+import '@/css/reset.css'
 
 Vue.config.productionTip = false
 
