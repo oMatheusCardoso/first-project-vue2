@@ -6,9 +6,24 @@
     <h1>Controle de Equipamentos</h1>
 
     <form>
-      <FormInput label="Email" type="email" name="email" placeholder="jovensgenios@jovensgenios.com"/>
-      <FormInput label="Senha" type="password" name="password" placeholder="Senha"/>
+      <FormInput label="Email" type="email" name="email" placeholder="jovensgenios@jovensgenios.com" required/>
+      <FormInput label="Senha" type="password" name="password" placeholder="Senha" required/>
+      <!-- <FormInput type="submit" value="Entrar"/> -->
+      <v-btn
+      v-progress-circular
+      :loading="loading"
+      class="flex-grow-1"
+      height="48"
+      variant="tonal"
+      @click="loading"
+      @click.native="submitForms"
+      @buttonpress
+      >
+        Entrar
+      </v-btn>
     </form>
+
+    
 
   </div>
 </template>
